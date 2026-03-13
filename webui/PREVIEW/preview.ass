@@ -1,0 +1,20 @@
+[Script Info]
+    Title: Dynamic Subtitles
+    ScriptType: v4.00+
+    PlayDepth: 0
+    PlayResX: 360
+    PlayResY: 640
+
+    [V4+ Styles]
+    Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+    Style: Default,Montserrat-ExtraBold,30,&H00FFFFFF&,&H00000000,&H00FFFFFF&,&H00000000&,-1,0,0,0,100,100,0,0,1,0,0,2,-2,-2,200,1
+
+    [Events]
+    Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+    Dialogue: 0,0:00:00.00,0:00:00.41,Default,,0,0,0,,{\fs35\c&H0000FF00&}THIS {\fs30\c&H00FFFFFF&}IS {\fs30\c&H00FFFFFF&}A {\fs30\c&H00FFFFFF&}PREVIEW {\fs30\c&H00FFFFFF&}OF {\fs30\c&H00FFFFFF&}YOUR {\fs30\c&H00FFFFFF&}SUBTITLES
+Dialogue: 0,0:00:00.41,0:00:00.55,Default,,0,0,0,,{\fs30\c&H00FFFFFF&}THIS {\fs35\c&H0000FF00&}IS {\fs30\c&H00FFFFFF&}A {\fs30\c&H00FFFFFF&}PREVIEW {\fs30\c&H00FFFFFF&}OF {\fs30\c&H00FFFFFF&}YOUR {\fs30\c&H00FFFFFF&}SUBTITLES
+Dialogue: 0,0:00:00.55,0:00:00.64,Default,,0,0,0,,{\fs30\c&H00FFFFFF&}THIS {\fs30\c&H00FFFFFF&}IS {\fs35\c&H0000FF00&}A {\fs30\c&H00FFFFFF&}PREVIEW {\fs30\c&H00FFFFFF&}OF {\fs30\c&H00FFFFFF&}YOUR {\fs30\c&H00FFFFFF&}SUBTITLES
+Dialogue: 0,0:00:00.64,0:00:01.14,Default,,0,0,0,,{\fs30\c&H00FFFFFF&}THIS {\fs30\c&H00FFFFFF&}IS {\fs30\c&H00FFFFFF&}A {\fs35\c&H0000FF00&}PREVIEW {\fs30\c&H00FFFFFF&}OF {\fs30\c&H00FFFFFF&}YOUR {\fs30\c&H00FFFFFF&}SUBTITLES
+Dialogue: 0,0:00:01.14,0:00:01.27,Default,,0,0,0,,{\fs30\c&H00FFFFFF&}THIS {\fs30\c&H00FFFFFF&}IS {\fs30\c&H00FFFFFF&}A {\fs30\c&H00FFFFFF&}PREVIEW {\fs35\c&H0000FF00&}OF {\fs30\c&H00FFFFFF&}YOUR {\fs30\c&H00FFFFFF&}SUBTITLES
+Dialogue: 0,0:00:01.27,0:00:01.47,Default,,0,0,0,,{\fs30\c&H00FFFFFF&}THIS {\fs30\c&H00FFFFFF&}IS {\fs30\c&H00FFFFFF&}A {\fs30\c&H00FFFFFF&}PREVIEW {\fs30\c&H00FFFFFF&}OF {\fs35\c&H0000FF00&}YOUR {\fs30\c&H00FFFFFF&}SUBTITLES
+Dialogue: 0,0:00:01.47,0:00:02.34,Default,,0,0,0,,{\fs30\c&H00FFFFFF&}THIS {\fs30\c&H00FFFFFF&}IS {\fs30\c&H00FFFFFF&}A {\fs30\c&H00FFFFFF&}PREVIEW {\fs30\c&H00FFFFFF&}OF {\fs30\c&H00FFFFFF&}YOUR {\fs35\c&H0000FF00&}SUBTITLES

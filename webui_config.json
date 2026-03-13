@@ -1,0 +1,17 @@
+{
+    "segments": 15,
+    "viral": true,
+    "themes": "",
+    "min_dur": 15,
+    "max_dur": 90,
+    "ai_backend": "gemini",
+    "api_key": "",
+    "ai_model": "gemini-2.5-flash",
+    "chunk_size": 70000,
+    "whisper_model": "large-v3-turbo",
+    "workflow": "Full",
+    "face_model": "insightface",
+    "face_mode": "auto",
+    "face_interval": "0.17,1.0",
+    "no_face_mode": "zoom"
+}

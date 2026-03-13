@@ -1,0 +1,82 @@
+
+Configurações de duração atuais: 15s - 90s
+DEBUG: Checking input_video state. input_video=None
+Iniciando download...
+Extraindo informações do vídeo...
+ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+ERROR: ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+Aviso: Falha ao extrair info com cookies: ERROR: ERROR: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+Título detectado: DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO) | Cortes Podcast
+Vídeo já existe em: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\input.mp4
+Pulando download e reutilizando arquivo local.
+DEBUG: Download finished. input_video=VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\input.mp4, project_folder=VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast
+Project Folder: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast
+Transcrevendo com modelo large-v3-turbo...
+Iniciando transcrição de VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\input.mp4...
+DEBUG: Python: C:\Users\Victor\Documents\ViralCutter-main\.venv\Scripts\python.exe
+DEBUG: Torch: 2.8.0+cpu
+Os arquivos SRT, TSV e JSON já existem. Pulando a transcrição.
+Criando segmentos virais usando GEMINI...
+[DEBUG] Chunking content (Size: 11232) with Chunk Size: 70000 and Overlap: 7000
+Processando 1 chunks usando modo: GEMINI
+Enviando chunk 1 para o Gemini (Model: gemini-2.5-flash)...
+[DEBUG] Raw response saved to: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\response_raw_part_1.txt
+Encontrados 3 segmentos neste chunk.
+[DEBUG] Matching 3 raw segments to timestamps...
+[DEBUG] Finished processing. 3 segments valid.
+Segmentos virais salvos em VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\viral_segments.txt
+
+Cortando segmentos...
+Processing segment 1/3
+Start time: 551.97, Duration: 60.569999999999936
+Error executing ffmpeg: Command '['ffmpeg', '-y', '-loglevel', 'error', '-hide_banner', '-ss', '551.970', '-i', 'VIRALS\\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\\input.mp4', '-t', '60.570', '-c:v', 'h264_nvenc', '-preset', 'p1', '-b:v', '5M', '-c:a', 'aac', '-b:a', '128k', 'VIRALS\\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\\cuts\\000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_original_scale.mp4']' returned non-zero exit status 4294967295.
+JSON de legenda gerado: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_processed.json
+
+==================================================
+
+Processing segment 2/3
+Start time: 65.56, Duration: 15.0
+Error executing ffmpeg: Command '['ffmpeg', '-y', '-loglevel', 'error', '-hide_banner', '-ss', '65.560', '-i', 'VIRALS\\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\\input.mp4', '-t', '15.000', '-c:v', 'h264_nvenc', '-preset', 'p1', '-b:v', '5M', '-c:a', 'aac', '-b:a', '128k', 'VIRALS\\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\\cuts\\001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_original_scale.mp4']' returned non-zero exit status 4294967295.
+JSON de legenda gerado: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_processed.json
+
+==================================================
+
+Processing segment 3/3
+Start time: 212.31, Duration: 15.0
+Error executing ffmpeg: Command '['ffmpeg', '-y', '-loglevel', 'error', '-hide_banner', '-ss', '212.310', '-i', 'VIRALS\\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\\input.mp4', '-t', '15.000', '-c:v', 'h264_nvenc', '-preset', 'p1', '-b:v', '5M', '-c:a', 'aac', '-b:a', '128k', 'VIRALS\\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\\cuts\\002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_original_scale.mp4']' returned non-zero exit status 4294967295.
+JSON de legenda gerado: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_processed.json
+
+==================================================
+
+Editando vídeo com insightface (Modo: auto)...
+Initializing InsightFace...
+InsightFace: Available ONNX Providers: ['AzureExecutionProvider', 'CPUExecutionProvider']
+WARNING: CUDAExecutionProvider not found. InsightFace will likely run on CPU.
+To fix, install onnxruntime-gpu: pip install onnxruntime-gpu
+InsightFace Initialized Successfully.
+Processing (InsightFace): VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\cuts\000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_original_scale.mp4 | Mode: auto
+Error opening video: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\cuts\000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_original_scale.mp4
+Processing (InsightFace): VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\cuts\001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_original_scale.mp4 | Mode: auto
+Error opening video: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\cuts\001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_original_scale.mp4
+Processing (InsightFace): VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\cuts\002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_original_scale.mp4 | Mode: auto
+Error opening video: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\cuts\002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_original_scale.mp4
+Detect Stats saved: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\face_modes.json
+Processando legendas...
+Configuração de legenda carregada de C:\Users\Victor\Documents\ViralCutter-main\temp_subtitle_config.json
+Loaded face modes for dynamic subtitle positioning.
+[DEBUG] Loaded VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_processed.json: Found 25 segments.
+[WARN] No dialogue lines written for VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_processed.json
+Processed file: 000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_processed.json -> 000_A_Bênção_Mais_Bizarra_Xamã_de_Cueca_e_Cuspe_na_Cara_processed.ass
+[DEBUG] Loaded VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_processed.json: Found 7 segments.
+[WARN] No dialogue lines written for VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_processed.json
+Processed file: 001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_processed.json -> 001_Faustão_no_Camarim_O_Rolê_Pesado_do_Rock_processed.ass
+[DEBUG] Loaded VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_processed.json: Found 6 segments.
+[WARN] No dialogue lines written for VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\subs\002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_processed.json
+Processed file: 002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_processed.json -> 002_O_Dia_que_o_Pelé_Estourou_Meu_Pneu_a_3_da_Manhã_processed.ass
+All JSON files processed and converted to ASS.
+Nenhum arquivo encontrado em 'final' para queimar legendas.
+Configuração salva em: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast\process_config.json
+Processo concluído! Verifique seus resultados em: VIRALS\DI FERRERO SOBRE SEU USO DE DR0G4S (NX ZERO)  Cortes Podcast
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001fcc92b2d40] moov atom not found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001fcc92b2d40] moov atom not found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001fcc92f5ec0] moov atom not found
