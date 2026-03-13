@@ -82,6 +82,14 @@ def generate_ass_from_file(input_path, output_path, project_folder,
         return
 
     # 4. Generate Content
+    
+    # Fix for FFmpeg's libass failing to match ExtraBold/Black fonts when Bold (-1) is also requested
+    ass_bold = bold
+    if ass_bold == "-1" or ass_bold == 1 or ass_bold == "1":
+        font_upper = font.upper()
+        if "EXTRABOLD" in font_upper or "BLACK" in font_upper or "SEMIBOLD" in font_upper:
+            ass_bold = "0"
+            
     header_ass = f"""[Script Info]
     Title: Dynamic Subtitles
     ScriptType: v4.00+
@@ -91,7 +99,7 @@ def generate_ass_from_file(input_path, output_path, project_folder,
 
     [V4+ Styles]
     Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-    Style: Default,{font},{base_size},{base_color},&H00000000,{outline_color},{shadow_color},{bold},{italic},{underline},{strikeout},100,100,0,0,{border_style},{outline_thickness},{shadow_size},{alignment},-2,-2,{vertical_position},1
+    Style: Default,{font},{base_size},{base_color},&H00000000,{outline_color},{shadow_color},{ass_bold},{italic},{underline},{strikeout},100,100,0,0,{border_style},{outline_thickness},{shadow_size},{alignment},-2,-2,{vertical_position},1
 
     [Events]
     Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
