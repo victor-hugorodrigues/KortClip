@@ -744,7 +744,7 @@ with gr.Blocks(title=i18n("KortClip WebUI"), theme=custom_theme, css=css) as dem
                 with gr.Accordion("⚙️ " + i18n("Advanced Settings"), open=False):
                     gr.Markdown(f"### {i18n('Appearance')}")
                     with gr.Row():
-                        font_name_input = gr.Textbox(label=i18n("Font Name"), value="Montserrat-Regular")
+                        font_name_input = gr.Textbox(label=i18n("Font Name"), value="Montserrat")
                         font_size_input = gr.Slider(label=i18n("Font Size (Base)"), minimum=8, maximum=80, value=12)
                         highlight_size_input = gr.Slider(label=i18n("Highlight Size"), minimum=8, maximum=80, value=14)
                     
