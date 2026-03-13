@@ -615,7 +615,7 @@ with gr.Blocks(title=i18n("KortClip WebUI"), theme=custom_theme, css=css) as dem
                     
                     with gr.Row():
                         video_quality_input = gr.Dropdown(choices=["best", "1080p", "720p", "480p"], label=i18n("Video Quality"), value="best")
-                        translate_input = gr.Dropdown(choices=["None", "pt", "en", "es", "fr", "de", "it", "ru", "ja", "ko", "zh-CN"], label=i18n("Translate Subtitles To"), value="None")
+                        translate_input = gr.Dropdown(choices=["None", "pt", "en", "es", "fr", "de", "it", "ru", "ja", "ko", "zh-CN"], label=i18n("Translate Subtitles To"), value="pt")
                         use_youtube_subs_input = gr.Checkbox(label=i18n("Use YouTube Subs"), value=True, info=i18n("Download and use official subtitles if available. (Recommended, it speeds up the process)"))
 
                     project_selector = gr.Dropdown(choices=[], label=i18n("Select Project"), visible=False)
@@ -756,7 +756,7 @@ with gr.Blocks(title=i18n("KortClip WebUI"), theme=custom_theme, css=css) as dem
                     
                     gr.Markdown(f"### {i18n('Styling & Effects')}")
                     with gr.Row():
-                        outline_thickness_input = gr.Slider(label=i18n("Outline Thickness"), minimum=0, maximum=10, value=1.5)
+                        outline_thickness_input = gr.Slider(label=i18n("Outline Thickness"), minimum=0, maximum=10, value=0)
                         shadow_size_input = gr.Slider(label=i18n("Shadow Size"), minimum=0, maximum=10, value=2)
                         border_style_input = gr.Dropdown(choices=[(i18n("Outline"), 1), (i18n("Opaque Box"), 3)], label=i18n("Border Style"), value=1)
                     
@@ -774,7 +774,7 @@ with gr.Blocks(title=i18n("KortClip WebUI"), theme=custom_theme, css=css) as dem
                         alignment_input = gr.Dropdown(choices=[(i18n("Left"), 1), (i18n("Center"), 2), (i18n("Right"), 3)], label=i18n("Alignment"), value=2)
                         gap_limit_input = gr.Slider(label=i18n("Gap Limit"), minimum=0.0, maximum=5.0, value=0.5, step=0.1)
                         mode_input = gr.Dropdown(choices=[(i18n("Highlight"), "highlight"), (i18n("Word by Word"), "word_by_word"), (i18n("No Highlight"), "no_highlight")], label=i18n("Mode"), value="highlight")
-                        words_per_block_input = gr.Slider(label=i18n("Words per Block"), minimum=1, maximum=20, value=3, step=1)
+                        words_per_block_input = gr.Slider(label=i18n("Words per Block"), minimum=1, maximum=20, value=8, step=1)
 
                 manual_inputs = [
                     font_name_input, font_size_input, font_color_input, highlight_color_input, 
