@@ -43,14 +43,14 @@ SUBTITLE_PRESETS = {
         "base_color": "#FFFFFF",
         "highlight_color": "#00FF00",
         "outline_color": "#000000",
-        "outline_thickness": 3,
+        "outline_thickness": 0,
         "shadow_color": "#000000",
         "shadow_size": 0,
         "bold": True,
         "italic": False,
         "uppercase": True,
         "highlight_size": 35,
-        "words_per_block": 2,
+        "words_per_block": 8,
         "gap_limit": 0.5,
         "mode": "highlight",
         "underline": False,
@@ -501,13 +501,18 @@ def render_preview_video(font, size, color, highlight, outline, outline_thick, s
         # Prepare safe path for ffmpeg filter: escape windows backslashes and colon
         safe_ass_path = ass_path.replace('\\', '/').replace(':', '\\:')
         
+        # Prepare fonts dir
+        fonts_dir = os.path.join(WORKING_DIR, "fonts")
+        os.makedirs(fonts_dir, exist_ok=True)
+        fonts_dir_escaped = fonts_dir.replace('\\', '/').replace(':', '\\:')
+
         # Render with ffmpeg
         # Background color #333333 to match UI roughly. 
         # Resolution 480x854 (9:16)
         cmd = [
             "ffmpeg", "-y", 
             "-f", "lavfi", "-i", "color=c=0x333333:s=480x854:d=2.4",
-            "-vf", f"ass='{safe_ass_path}'",
+            "-vf", f"ass='{safe_ass_path}':fontsdir='{fonts_dir_escaped}'",
             "-c:v", "libx264", "-preset", "ultrafast", "-pix_fmt", "yuv420p", "-an",
             out_vid_path
         ]

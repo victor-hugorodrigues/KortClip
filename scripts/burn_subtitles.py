@@ -14,11 +14,16 @@ def burn_video_file(video_path, subtitle_path, output_path):
     # Para garantir, usamos replace e forward slashes.
     subtitle_file_ffmpeg = subtitle_path.replace('\\', '/').replace(':', '\\:')
 
+    # Setup explicit typography directory
+    fonts_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "fonts")
+    os.makedirs(fonts_dir, exist_ok=True)
+    fonts_dir_escaped = fonts_dir.replace('\\', '/').replace(':', '\\:')
+    
     def run_ffmpeg(encoder, preset, additional_args=[]):
         cmd = [
             "ffmpeg", "-y", "-loglevel", "error", "-hide_banner",
             '-i', video_path,
-            '-vf', f"subtitles='{subtitle_file_ffmpeg}'",
+            '-vf', f"subtitles='{subtitle_file_ffmpeg}':fontsdir='{fonts_dir_escaped}'",
             '-c:v', encoder,
             '-preset', preset,
             '-b:v', '5M',
